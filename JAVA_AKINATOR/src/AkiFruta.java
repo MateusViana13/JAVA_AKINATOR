@@ -5,6 +5,8 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
 
+
+
 public class AkiFruta {
     public static void main(String[] args) {
         // Inicialização de objetos e variáveis
@@ -101,24 +103,28 @@ public class AkiFruta {
                 perguntas = novoArray;
             }
 
+
+            Fruta frutaEncontrada = new Fruta();
             String nome = ""; // Nome padrão 
             int maior = frutas.get(0).getPontos(); // Inicializa variável para acompanhar a maior pontuação
-
+            frutaEncontrada =frutas.get(0);
+            nome = frutaEncontrada.getNome();
             // Encontra a fruta com a maior pontuação
             for (Fruta fruta : frutas) {
                 System.out.println(fruta.getPontos());  // Exibe os pontos de cada fruta
 
                 if (fruta.getPontos() > maior) {
+                    frutaEncontrada = fruta;
                     nome = fruta.getNome();     // Atualiza o nome da fruta com a maior pontuação
                     maior = fruta.getPontos();  // Atualiza a maior pontuação
-                }
+                }            
             }
 
             if (maior == 0)
                 nome = "batata"; // Define um nome padrão se todas as pontuações forem zero
 
             // Pergunta ao usuário se a fruta adivinhada é correta
-            System.out.print("\nSua fruta é... " + nome + "!\nAcertei?\n1. Sim\n2. Não\nResposta: ");
+            System.out.print("\nSua fruta é... " + frutaEncontrada.getNome() + "!\nAcertei?\n1. Sim\n2. Não\nResposta: ");
             int respostaNumerica = scan.nextInt();
 
             // Verifica a resposta do usuário e finaliza o jogo conforme necessário
@@ -126,6 +132,11 @@ public class AkiFruta {
                 System.out.println("\nEu ganhei!");
                 flag = true; // Define a flag como verdadeira para encerrar o loop externo
             }
+
+            if(flag == false){
+                frutas.remove(frutaEncontrada);
+            }
+
             if (i == 2 && !flag)
                 System.out.println("\nVocê ganhou!"); // Exibe mensagem de vitória se chegar ao fim do segundo loop externo sem acertar
         }
