@@ -104,24 +104,22 @@ public class AkiFruta {
             }
 
 
-            Fruta frutaEncontrada = new Fruta();
-            String nome = ""; // Nome padrão 
+            Fruta frutaEncontrada = new Fruta(); //Declarando um objeto de fruta vazio           
             int maior = frutas.get(0).getPontos(); // Inicializa variável para acompanhar a maior pontuação
-            frutaEncontrada =frutas.get(0);
-            nome = frutaEncontrada.getNome();
+            frutaEncontrada =frutas.get(0);  //atribuindo o valor da fruta auxiliar como a primeira fruta da lista
+
             // Encontra a fruta com a maior pontuação
             for (Fruta fruta : frutas) {
                 System.out.println(fruta.getPontos());  // Exibe os pontos de cada fruta
 
                 if (fruta.getPontos() > maior) {
-                    frutaEncontrada = fruta;
-                    nome = fruta.getNome();     // Atualiza o nome da fruta com a maior pontuação
+                    frutaEncontrada = fruta;//atribuindo o valor da fruta auxiliar como a fruta com maior pontuação                  
                     maior = fruta.getPontos();  // Atualiza a maior pontuação
                 }            
             }
 
             if (maior == 0)
-                nome = "batata"; // Define um nome padrão se todas as pontuações forem zero
+                frutaEncontrada.setNome("batata");// Define um nome padrão se todas as pontuações forem zero
 
             // Pergunta ao usuário se a fruta adivinhada é correta
             System.out.print("\nSua fruta é... " + frutaEncontrada.getNome() + "!\nAcertei?\n1. Sim\n2. Não\nResposta: ");
@@ -134,7 +132,7 @@ public class AkiFruta {
             }
 
             if(flag == false){
-                frutas.remove(frutaEncontrada);
+                frutas.remove(frutaEncontrada); //Remove a fruta da lista de opções caso o usuário indique que ela não é a que ele escolheu
             }
 
             if (i == 2 && !flag)
