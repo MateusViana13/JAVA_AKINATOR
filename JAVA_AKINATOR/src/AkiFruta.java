@@ -110,7 +110,7 @@ public class AkiFruta {
 
             // Encontra a fruta com a maior pontuação
             for (Fruta fruta : frutas) {
-                System.out.println(fruta.getPontos());  // Exibe os pontos de cada fruta
+                // System.out.println(fruta.getPontos());  // Exibe os pontos de cada fruta
 
                 if (fruta.getPontos() > maior) {
                     frutaEncontrada = fruta;//atribuindo o valor da fruta auxiliar como a fruta com maior pontuação                  

@@ -140,17 +140,17 @@ public class BancoDados {
             false, // encontrada em cachos
             false, // consumida cozida
             true, // rica em vitamina C
-            false, // pequena
-            false, // consumida seca
+            true, // pequena
+            true, // consumida seca
             true, // usado em sobremesas
-            false, // originária da Ásia
+            true, // originária da Ásia
             false, // encontrada em arbustos
             false, // popular no inverno
             true, // rica em fibras
             true, // usado em tortas
             false, // encontrada em regiões tropicais
-            true, // usado para fazer vinho
-            false, // consumida em forma de geleia
+            false, // usado para fazer vinho
+            true, // consumida em forma de geleia
             true, // usado em doces
             false, // verde quando madura
             true, // usado em sucos detox
@@ -188,17 +188,17 @@ public class BancoDados {
             true, // encontrada em árvores
             true, // consumida principalmente fresca
             false, // usado para fazer geleias
-            false, // encontrada em cachos
+            true, // encontrada em cachos
             false, // consumida cozida
             true, // rica em vitamina C
             true, // pequena
             false, // consumida seca
             true, // usado em sobremesas
-            false, // originária da Ásia
+            true, // originária da Ásia
             false, // encontrada em arbustos
             true, // popular no inverno
             true, // rica em fibras
-            false, // usado em tortas
+            true, // usado em tortas
             true, // encontrada em regiões tropicais
             false, // usado para fazer vinho
             true, // consumida em forma de geleia
@@ -208,13 +208,13 @@ public class BancoDados {
             true, // rica em antioxidantes
             true, // consumida em saladas
             false, // originária da Europa
-            false, // usado em smoothies
+            true, // usado em smoothies
             false, // encontrada em vinhas
             true, // popular em sobremesas geladas
             false, // usado em conservas
             true, // consumida em forma de purê
-            false, // encontrada em grandes cachos
-            true, // usado em molhos
+            true, // encontrada em grandes cachos
+            false, // usado em molhos
             true, // rica em minerais
             false, // consumida em forma de compota
             true, // usado em recheios
@@ -284,7 +284,7 @@ public class BancoDados {
             true, // usado para fazer suco
             false, // popular no verão
             true, // alongada
-            true, // possui casca espessa
+            false, // possui casca espessa
             true, // originária da América do Sul
             false, // usado em saladas de frutas
             true, // encontrada em árvores
@@ -296,7 +296,7 @@ public class BancoDados {
             false, // pequena
             false, // consumida seca
             true, // usado em sobremesas
-            true, // originária da Ásia
+            false, // originária da Ásia
             false, // encontrada em arbustos
             false, // popular no inverno
             true, // rica em fibras
@@ -309,10 +309,10 @@ public class BancoDados {
             false, // usado em sucos detox
             true, // rica em antioxidantes
             true, // consumida em saladas
-            true, // originária da Europa
+            false, // originária da Europa
             true, // usado em smoothies
             false, // encontrada em vinhas
-            false, // popular em sobremesas geladas
+            true, // popular em sobremesas geladas
             true, // usado em conservas
             true, // consumida em forma de purê
             false, // encontrada em grandes cachos
@@ -324,7 +324,7 @@ public class BancoDados {
         frutas.add(new Fruta("Melancia",
             true, // redonda
             false, // amarela
-            true, // cresce em árvores
+            false, // cresce em árvores
             true, // consumida com casca
             true, // comestível
             false, // cítrica
@@ -334,43 +334,43 @@ public class BancoDados {
             true, // doce
             true, // usado para fazer suco
             true, // popular no verão
-            true, // alongada
+            false, // alongada
             true, // possui casca espessa
             false, // originária da América do Sul
-            false, // usado em saladas de frutas
-            true, // encontrada em árvores
+            true, // usado em saladas de frutas
+            false, // encontrada em árvores
             true, // consumida principalmente fresca
-            true, // usado para fazer geleias
-            true, // encontrada em cachos
+            false, // usado para fazer geleias
+            false, // encontrada em cachos
             false, // consumida cozida
             true, // rica em vitamina C
             false, // pequena
             false, // consumida seca
             true, // usado em sobremesas
             true, // originária da Ásia
-            false, // encontrada em arbustos
+            true, // encontrada em arbustos
             false, // popular no inverno
             false, // rica em fibras
             false, // usado em tortas
             true, // encontrada em regiões tropicais
             false, // usado para fazer vinho
-            true, // consumida em forma de geleia
-            true, // usado em doces
-            false, // verde quando madura
+            false, // consumida em forma de geleia
+            false, // usado em doces
+            true, // verde quando madura
             true, // usado em sucos detox
             true, // rica em antioxidantes
             true, // consumida em saladas
-            true, // originária da Europa
+            false, // originária da Europa
             false, // usado em smoothies
             false, // encontrada em vinhas
-            true, // popular em sobremesas geladas
-            true, // usado em conservas
-            true, // consumida em forma de purê
-            true, // encontrada em grandes cachos
-            true, // usado em molhos
+            false, // popular em sobremesas geladas
+            false, // usado em conservas
+            false, // consumida em forma de purê
+            false, // encontrada em grandes cachos
+            false, // usado em molhos
             true, // rica em minerais
-            true, // consumida em forma de compota
-            true, // usado em recheios
+            false, // consumida em forma de compota
+            false, // usado em recheios
             true)); // conhecida por seu aroma
         frutas.add(new Fruta("Morango",
             false, // redonda
