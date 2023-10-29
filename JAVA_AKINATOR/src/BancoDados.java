@@ -117,18 +117,771 @@ public class BancoDados {
 
     public ArrayList<Fruta> ImportarFrutas() {
         ArrayList<Fruta> frutas = new ArrayList<>();
-        frutas.add(new Fruta("Maçã", true, false, true, true, true, false, false, false, true, true, true, false,
-                false, false, false, false, false, true, true, false, false, true, false, true, true, false, false,
-                false, true, true, false, false, false, true, false, false, true, true, false, true, false, false,
-                false, true, false, true, true, true, true, false));
-        frutas.add(new Fruta("Banana", false, true, true, false, true, false, true, false, true, true, false, false,
-                false, false, false, false, false, true, false, false, false, false, true, true, false, false, false,
-                false, false, false, false, false, false, false, true, false, true, true, true, false, false, false,
-                false, false, false, false, false, false, false, false));
-        frutas.add(new Fruta("Orange", false, true, true, false, true, true, true, false, true, true, false, false,
-                false, false, false, false, false, true, false, false, false, false, true, true, false, false, false,
-                false, false, false, false, false, false, false, true, false, true, true, true, false, false, false,
-                false, false, false, false, false, false, false, false));
+        frutas.add(new Fruta("Maçã",
+            true, // redonda
+            false, // amarela
+            true, // cresce em árvores
+            true, // consumida com casca
+            true, // comestível
+            false, // cítrica
+            false, // tropical
+            false, // grande
+            true, // possui sementes
+            true, // doce
+            true, // usado para fazer suco
+            true, // popular no verão
+            false, // alongada
+            false, // possui casca espessa
+            false, // originária da América do Sul
+            true, // usado em saladas de frutas
+            true, // encontrada em árvores
+            true, // consumida principalmente fresca
+            true, // usado para fazer geleias
+            false, // encontrada em cachos
+            false, // consumida cozida
+            true, // rica em vitamina C
+            false, // pequena
+            false, // consumida seca
+            true, // usado em sobremesas
+            false, // originária da Ásia
+            false, // encontrada em arbustos
+            false, // popular no inverno
+            true, // rica em fibras
+            true, // usado em tortas
+            false, // encontrada em regiões tropicais
+            true, // usado para fazer vinho
+            false, // consumida em forma de geleia
+            true, // usado em doces
+            false, // verde quando madura
+            true, // usado em sucos detox
+            true, // rica em antioxidantes
+            true, // consumida em saladas
+            false, // originária da Europa
+            true, // usado em smoothies
+            false, // encontrada em vinhas
+            true, // popular em sobremesas geladas
+            true, // usado em conservas
+            true, // consumida em forma de purê
+            false, // encontrada em grandes cachos
+            true, // usado em molhos
+            true, // rica em minerais
+            true, // consumida em forma de compota
+            true, // usado em recheios
+            true)); // conhecida por seu aroma
+        frutas.add(new Fruta("Banana",
+            false, // redonda
+            true, // amarela
+            false, // cresce em árvores
+            true, // consumida com casca
+            true, // comestível
+            false, // cítrica
+            true, // tropical
+            false, // grande
+            true, // possui sementes
+            true, // doce
+            false, // usado para fazer suco
+            true, // popular no verão
+            true, // alongada
+            true, // possui casca espessa
+            false, // originária da América do Sul
+            false, // usado em saladas de frutas
+            true, // encontrada em árvores
+            true, // consumida principalmente fresca
+            false, // usado para fazer geleias
+            false, // encontrada em cachos
+            false, // consumida cozida
+            true, // rica em vitamina C
+            true, // pequena
+            false, // consumida seca
+            true, // usado em sobremesas
+            false, // originária da Ásia
+            false, // encontrada em arbustos
+            true, // popular no inverno
+            true, // rica em fibras
+            false, // usado em tortas
+            true, // encontrada em regiões tropicais
+            false, // usado para fazer vinho
+            true, // consumida em forma de geleia
+            true, // usado em doces
+            false, // verde quando madura
+            false, // usado em sucos detox
+            true, // rica em antioxidantes
+            true, // consumida em saladas
+            false, // originária da Europa
+            false, // usado em smoothies
+            false, // encontrada em vinhas
+            true, // popular em sobremesas geladas
+            false, // usado em conservas
+            true, // consumida em forma de purê
+            false, // encontrada em grandes cachos
+            true, // usado em molhos
+            true, // rica em minerais
+            false, // consumida em forma de compota
+            true, // usado em recheios
+            false)); // conhecida por seu aroma
+        frutas.add(new Fruta("Laranja",
+            true, // redonda
+            true, // amarela
+            true, // cresce em árvores
+            false, // consumida com casca
+            true, // comestível
+            true, // cítrica
+            true, // tropical
+            false, // grande
+            true, // possui sementes
+            false, // doce
+            true, // usado para fazer suco
+            true, // popular no verão
+            false, // alongada
+            false, // possui casca espessa
+            false, // originária da América do Sul
+            true, // usado em saladas de frutas
+            true, // encontrada em árvores
+            true, // consumida principalmente fresca
+            false, // usado para fazer geleias
+            false, // encontrada em cachos
+            false, // consumida cozida
+            true, // rica em vitamina C
+            true, // pequena
+            false, // consumida seca
+            false, // usado em sobremesas
+            true, // originária da Ásia
+            false, // encontrada em arbustos
+            false, // popular no inverno
+            true, // rica em fibras
+            false, // usado em tortas
+            true, // encontrada em regiões tropicais
+            false, // usado para fazer vinho
+            false, // consumida em forma de geleia
+            false, // usado em doces
+            false, // verde quando madura
+            true, // usado em sucos detox
+            true, // rica em antioxidantes
+            true, // consumida em saladas
+            false, // originária da Europa
+            false, // usado em smoothies
+            false, // encontrada em vinhas
+            false, // popular em sobremesas geladas
+            false, // usado em conservas
+            false, // consumida em forma de purê
+            false, // encontrada em grandes cachos
+            false, // usado em molhos
+            true, // rica em minerais
+            false, // consumida em forma de compota
+            false, // usado em recheios
+            false)); // conhecida por seu aroma
+        frutas.add(new Fruta("Abacate",
+            false, // redonda
+            false, // amarela
+            true, // cresce em árvores
+            false, // consumida com casca
+            true, // comestível
+            false, // cítrica
+            true, // tropical
+            true, // grande
+            true, // possui sementes
+            false, // doce
+            true, // usado para fazer suco
+            false, // popular no verão
+            true, // alongada
+            true, // possui casca espessa
+            true, // originária da América do Sul
+            false, // usado em saladas de frutas
+            true, // encontrada em árvores
+            true, // consumida principalmente fresca
+            false, // usado para fazer geleias
+            false, // encontrada em cachos
+            false, // consumida cozida
+            true, // rica em vitamina C
+            false, // pequena
+            false, // consumida seca
+            true, // usado em sobremesas
+            true, // originária da Ásia
+            false, // encontrada em arbustos
+            false, // popular no inverno
+            true, // rica em fibras
+            false, // usado em tortas
+            true, // encontrada em regiões tropicais
+            false, // usado para fazer vinho
+            false, // consumida em forma de geleia
+            true, // usado em doces
+            true, // verde quando madura
+            false, // usado em sucos detox
+            true, // rica em antioxidantes
+            true, // consumida em saladas
+            true, // originária da Europa
+            true, // usado em smoothies
+            false, // encontrada em vinhas
+            false, // popular em sobremesas geladas
+            true, // usado em conservas
+            true, // consumida em forma de purê
+            false, // encontrada em grandes cachos
+            true, // usado em molhos
+            true, // rica em minerais
+            true, // consumida em forma de compota
+            true, // usado em recheios
+            true)); // conhecida por seu aroma
+        frutas.add(new Fruta("Melancia",
+            true, // redonda
+            false, // amarela
+            true, // cresce em árvores
+            true, // consumida com casca
+            true, // comestível
+            false, // cítrica
+            true, // tropical
+            true, // grande
+            false, // possui sementes
+            true, // doce
+            true, // usado para fazer suco
+            true, // popular no verão
+            true, // alongada
+            true, // possui casca espessa
+            false, // originária da América do Sul
+            false, // usado em saladas de frutas
+            true, // encontrada em árvores
+            true, // consumida principalmente fresca
+            true, // usado para fazer geleias
+            true, // encontrada em cachos
+            false, // consumida cozida
+            true, // rica em vitamina C
+            false, // pequena
+            false, // consumida seca
+            true, // usado em sobremesas
+            true, // originária da Ásia
+            false, // encontrada em arbustos
+            false, // popular no inverno
+            false, // rica em fibras
+            false, // usado em tortas
+            true, // encontrada em regiões tropicais
+            false, // usado para fazer vinho
+            true, // consumida em forma de geleia
+            true, // usado em doces
+            false, // verde quando madura
+            true, // usado em sucos detox
+            true, // rica em antioxidantes
+            true, // consumida em saladas
+            true, // originária da Europa
+            false, // usado em smoothies
+            false, // encontrada em vinhas
+            true, // popular em sobremesas geladas
+            true, // usado em conservas
+            true, // consumida em forma de purê
+            true, // encontrada em grandes cachos
+            true, // usado em molhos
+            true, // rica em minerais
+            true, // consumida em forma de compota
+            true, // usado em recheios
+            true)); // conhecida por seu aroma
+        frutas.add(new Fruta("Morango",
+            false, // redonda
+            false, // amarela
+            false, // cresce em árvores
+            true, // consumida com casca
+            true, // comestível
+            false, // cítrica
+            false, // tropical
+            false, // grande
+            true, // possui sementes
+            true, // doce
+            true, // usado para fazer suco
+            true, // popular no verão
+            true, // alongada
+            false, // possui casca espessa
+            false, // originária da América do Sul
+            true, // usado em saladas de frutas
+            true, // encontrada em árvores
+            true, // consumida principalmente fresca
+            true, // usado para fazer geleias
+            false, // encontrada em cachos
+            false, // consumida cozida
+            true, // rica em vitamina C
+            true, // pequena
+            true, // consumida seca
+            true, // usado em sobremesas
+            false, // originária da Ásia
+            false, // encontrada em arbustos
+            false, // popular no inverno
+            true, // rica em fibras
+            true, // usado em tortas
+            false, // encontrada em regiões tropicais
+            true, // usado para fazer vinho
+            true, // consumida em forma de geleia
+            true, // usado em doces
+            false, // verde quando madura
+            true, // usado em sucos detox
+            true, // rica em antioxidantes
+            true, // consumida em saladas
+            false, // originária da Europa
+            true, // usado em smoothies
+            false, // encontrada em vinhas
+            true, // popular em sobremesas geladas
+            true, // usado em conservas
+            true, // consumida em forma de purê
+            false, // encontrada em grandes cachos
+            true, // usado em molhos
+            true, // rica em minerais
+            true, // consumida em forma de compota
+            true, // usado em recheios
+            true)); // conhecida por seu aroma
+        frutas.add(new Fruta("Abacaxi",
+            true, // redonda
+            true, // amarela
+            false, // cresce em árvores
+            false, // consumida com casca
+            true, // comestível
+            false, // cítrica
+            true, // tropical
+            false, // grande
+            true, // possui sementes
+            false, // doce
+            true, // usado para fazer suco
+            true, // popular no verão
+            true, // alongada
+            true, // possui casca espessa
+            true, // originária da América do Sul
+            true, // usado em saladas de frutas
+            false, // encontrada em árvores
+            true, // consumida principalmente fresca
+            false, // usado para fazer geleias
+            false, // encontrada em cachos
+            false, // consumida cozida
+            true, // rica em vitamina C
+            false, // pequena
+            false, // consumida seca
+            true, // usado em sobremesas
+            false, // originária da Ásia
+            true, // encontrada em arbustos
+            false, // popular no inverno
+            false, // rica em fibras
+            true, // usado em tortas
+            true, // encontrada em regiões tropicais
+            false, // usado para fazer vinho
+            false, // consumida em forma de geleia
+            true, // usado em doces
+            false, // verde quando madura
+            true, // usado em sucos detox
+            true, // rica em antioxidantes
+            true, // consumida em saladas
+            false, // originária da Europa
+            false, // usado em smoothies
+            false, // encontrada em vinhas
+            true, // popular em sobremesas geladas
+            false, // usado em conservas
+            false, // consumida em forma de purê
+            false, // encontrada em grandes cachos
+            false, // usado em molhos
+            true, // rica em minerais
+            false, // consumida em forma de compota
+            true, // usado em recheios
+            true)); // conhecida por seu aroma
+        frutas.add(new Fruta("Mamão",
+            false, // redonda
+            false, // amarela
+            true, // cresce em árvores
+            false, // consumida com casca
+            true, // comestível
+            false, // cítrica
+            true, // tropical
+            true, // grande
+            true, // possui sementes
+            true, // doce
+            true, // usado para fazer suco
+            true, // popular no verão
+            true, // alongada
+            true, // possui casca espessa
+            true, // originária da América do Sul
+            true, // usado em saladas de frutas
+            true, // encontrada em árvores
+            true, // consumida principalmente fresca
+            true, // usado para fazer geleias
+            false, // encontrada em cachos
+            false, // consumida cozida
+            true, // rica em vitamina C
+            false, // pequena
+            true, // consumida seca
+            true, // usado em sobremesas
+            true, // originária da Ásia
+            false, // encontrada em arbustos
+            true, // popular no inverno
+            true, // rica em fibras
+            true, // usado em tortas
+            false, // encontrada em regiões tropicais
+            false, // usado para fazer vinho
+            false, // consumida em forma de geleia
+            true, // usado em doces
+            false, // verde quando madura
+            true, // usado em sucos detox
+            true, // rica em antioxidantes
+            true, // consumida em saladas
+            true, // originária da Europa
+            true, // usado em smoothies
+            false, // encontrada em vinhas
+            false, // popular em sobremesas geladas
+            true, // usado em conservas
+            true, // consumida em forma de purê
+            false, // encontrada em grandes cachos
+            true, // usado em molhos
+            true, // rica em minerais
+            true, // consumida em forma de compota
+            true, // usado em recheios
+            true)); // conhecida por seu aroma
+        frutas.add(new Fruta("Pera",
+            false, // redonda
+            false, // amarela
+            true, // cresce em árvores
+            true, // consumida com casca
+            true, // comestível
+            false, // cítrica
+            false, // tropical
+            false, // grande
+            true, // possui sementes
+            true, // doce
+            false, // usado para fazer suco
+            false, // popular no verão
+            false, // alongada
+            false, // possui casca espessa
+            false, // originária da América do Sul
+            false, // usado em saladas de frutas
+            true, // encontrada em árvores
+            true, // consumida principalmente fresca
+            false, // usado para fazer geleias
+            false, // encontrada em cachos
+            false, // consumida cozida
+            false, // rica em vitamina C
+            false, // pequena
+            false, // consumida seca
+            false, // usado em sobremesas
+            false, // originária da Ásia
+            false, // encontrada em arbustos
+            false, // popular no inverno
+            true, // rica em fibras
+            false, // usado em tortas
+            false, // encontrada em regiões tropicais
+            false, // usado para fazer vinho
+            false, // consumida em forma de geleia
+            false, // usado em doces
+            true, // verde quando madura
+            true, // usado em sucos detox
+            true, // rica em antioxidantes
+            true, // consumida em saladas
+            false, // originária da Europa
+            false, // usado em smoothies
+            false, // encontrada em vinhas
+            true, // popular em sobremesas geladas
+            true, // usado em conservas
+            true, // consumida em forma de purê
+            false, // encontrada em grandes cachos
+            false, // usado em molhos
+            false, // rica em minerais
+            false, // consumida em forma de compota
+            false, // usado em recheios
+            true)); // conhecida por seu aroma
+        frutas.add(new Fruta("Kiwi",
+            false, // redonda
+            false, // amarela
+            true, // cresce em árvores
+            true, // consumida com casca
+            true, // comestível
+            true, // cítrica
+            false, // tropical
+            false, // grande
+            true, // possui sementes
+            true, // doce
+            false, // usado para fazer suco
+            false, // popular no verão
+            true, // alongada
+            true, // possui casca espessa
+            false, // originária da América do Sul
+            false, // usado em saladas de frutas
+            true, // encontrada em árvores
+            true, // consumida principalmente fresca
+            false, // usado para fazer geleias
+            true, // encontrada em cachos
+            false, // consumida cozida
+            true, // rica em vitamina C
+            false, // pequena
+            true, // consumida seca
+            false, // usado em sobremesas
+            true, // originária da Ásia
+            false, // encontrada em arbustos
+            false, // popular no inverno
+            true, // rica em fibras
+            false, // usado em tortas
+            false, // encontrada em regiões tropicais
+            false, // usado para fazer vinho
+            false, // consumida em forma de geleia
+            true, // usado em doces
+            false, // verde quando madura
+            false, // usado em sucos detox
+            true, // rica em antioxidantes
+            true, // consumida em saladas
+            true, // originária da Europa
+            false, // usado em smoothies
+            false, // encontrada em vinhas
+            false, // popular em sobremesas geladas
+            true, // usado em conservas
+            true, // consumida em forma de purê
+            false, // encontrada em grandes cachos
+            false, // usado em molhos
+            true, // rica em minerais
+            false, // consumida em forma de compota
+            false, // usado em recheios
+            true)); // conhecida por seu aroma
+        frutas.add(new Fruta("Limão",
+            false, // redonda
+            true, // amarela
+            true, // cresce em árvores
+            false, // consumida com casca
+            true, // comestível
+            true, // cítrica
+            true, // tropical
+            false, // grande
+            false, // possui sementes
+            true, // doce
+            false, // usado para fazer suco
+            true, // popular no verão
+            true, // alongada
+            false, // possui casca espessa
+            false, // originária da América do Sul
+            false, // usado em saladas de frutas
+            true, // encontrada em árvores
+            true, // consumida principalmente fresca
+            true, // usado para fazer geleias
+            false, // encontrada em cachos
+            false, // consumida cozida
+            true, // rica em vitamina C
+            false, // pequena
+            false, // consumida seca
+            true, // usado em sobremesas
+            false, // originária da Ásia
+            false, // encontrada em arbustos
+            false, // popular no inverno
+            true, // rica em fibras
+            true, // usado em tortas
+            false, // encontrada em regiões tropicais
+            false, // usado para fazer vinho
+            true, // consumida em forma de geleia
+            true, // usado em doces
+            false, // verde quando madura
+            true, // usado em sucos detox
+            true, // rica em antioxidantes
+            true, // consumida em saladas
+            false, // originária da Europa
+            true, // usado em smoothies
+            false, // encontrada em vinhas
+            true, // popular em sobremesas geladas
+            true, // usado em conservas
+            true, // consumida em forma de purê
+            false, // encontrada em grandes cachos
+            true, // usado em molhos
+            true, // rica em minerais
+            true, // consumida em forma de compota
+            true, // usado em recheios
+            true)); // conhecida por seu aroma
+        frutas.add(new Fruta("Manga",
+            true, // redonda
+            false, // amarela
+            true, // cresce em árvores
+            false, // consumida com casca
+            true, // comestível
+            false, // cítrica
+            true, // tropical
+            false, // grande
+            true, // possui sementes
+            true, // doce
+            true, // usado para fazer suco
+            true, // popular no verão
+            true, // alongada
+            false, // possui casca espessa
+            true, // originária da América do Sul
+            true, // usado em saladas de frutas
+            true, // encontrada em árvores
+            true, // consumida principalmente fresca
+            true, // usado para fazer geleias
+            false, // encontrada em cachos
+            false, // consumida cozida
+            true, // rica em vitamina C
+            true, // pequena
+            false, // consumida seca
+            true, // usado em sobremesas
+            true, // originária da Ásia
+            false, // encontrada em arbustos
+            false, // popular no inverno
+            true, // rica em fibras
+            true, // usado em tortas
+            true, // encontrada em regiões tropicais
+            true, // usado para fazer vinho
+            true, // consumida em forma de geleia
+            true, // usado em doces
+            true, // verde quando madura
+            true, // usado em sucos detox
+            true, // rica em antioxidantes
+            true, // consumida em saladas
+            true, // originária da Europa
+            true, // usado em smoothies
+            true, // encontrada em vinhas
+            true, // popular em sobremesas geladas
+            true, // usado em conservas
+            true, // consumida em forma de purê
+            false, // encontrada em grandes cachos
+            true, // usado em molhos
+            true, // rica em minerais
+            true, // consumida em forma de compota
+            true, // usado em recheios
+            true)); // conhecida por seu aroma
+        frutas.add(new Fruta("Uva",
+            false, // redonda
+            false, // amarela
+            true, // cresce em árvores
+            false, // consumida com casca
+            true, // comestível
+            false, // cítrica
+            true, // tropical
+            false, // grande
+            true, // possui sementes
+            true, // doce (defina o valor de acordo com o tipo de uva que está representando)
+            true, // usado para fazer suco
+            false, // popular no verão
+            true, // alongada
+            false, // possui casca espessa
+            false, // originária da América do Sul
+            true, // usado em saladas de frutas
+            true, // encontrada em árvores
+            true, // consumida principalmente fresca
+            true, // usado para fazer geleias
+            false, // encontrada em cachos
+            false, // consumida cozida
+            true, // rica em vitamina C
+            false, // pequena
+            true, // consumida seca
+            true, // usado em sobremesas
+            true, // originária da Ásia
+            false, // encontrada em arbustos
+            false, // popular no inverno
+            true, // rica em fibras
+            true, // usado em tortas
+            true, // encontrada em regiões tropicais
+            true, // usado para fazer vinho
+            true, // consumida em forma de geleia
+            true, // usado em doces
+            true, // verde quando madura
+            true, // usado em sucos detox
+            true, // rica em antioxidantes
+            true, // consumida em saladas
+            true, // originária da Europa
+            true, // usado em smoothies
+            false, // encontrada em vinhas
+            true, // popular em sobremesas geladas
+            true, // usado em conservas
+            true, // consumida em forma de purê
+            true, // encontrada em grandes cachos
+            true, // usado em molhos
+            true, // rica em minerais
+            true, // consumida em forma de compota
+            true, // usado em recheios
+            true)); // conhecida por seu aroma
+        frutas.add(new Fruta("Cereja",
+            false, // redonda
+            true, // amarela
+            false, // cresce em árvores
+            false, // consumida com casca
+            true, // comestível
+            false, // cítrica
+            true, // tropical
+            false, // grande
+            true, // possui sementes
+            true, // doce
+            true, // usado para fazer suco
+            true, // popular no verão
+            false, // alongada
+            false, // possui casca espessa
+            false, // originária da América do Sul
+            true, // usado em saladas de frutas
+            true, // encontrada em árvores
+            true, // consumida principalmente fresca
+            true, // usado para fazer geleias
+            true, // encontrada em cachos
+            false, // consumida cozida
+            true, // rica em vitamina C
+            true, // pequena
+            true, // consumida seca
+            true, // usado em sobremesas
+            false, // originária da Ásia
+            false, // encontrada em arbustos
+            true, // popular no inverno
+            true, // rica em fibras
+            true, // usado em tortas
+            false, // encontrada em regiões tropicais
+            true, // usado para fazer vinho
+            true, // consumida em forma de geleia
+            true, // usado em doces
+            false, // verde quando madura
+            true, // usado em sucos detox
+            true, // rica em antioxidantes
+            true, // consumida em saladas
+            false, // originária da Europa
+            true, // usado em smoothies
+            false, // encontrada em vinhas
+            true, // popular em sobremesas geladas
+            true, // usado em conservas
+            true, // consumida em forma de purê
+            true, // encontrada em grandes cachos
+            true, // usado em molhos
+            true, // rica em minerais
+            true, // consumida em forma de compota
+            true, // usado em recheios
+            true)); // conhecida por seu aroma
+        frutas.add(new Fruta("Pêssego",
+            true, // redonda
+            true, // amarela
+            true, // cresce em árvores
+            true, // consumida com casca
+            true, // comestível
+            false, // cítrica
+            false, // tropical
+            false, // grande
+            true, // possui sementes
+            true, // doce
+            true, // usado para fazer suco
+            true, // popular no verão
+            true, // alongada
+            false, // possui casca espessa
+            false, // originária da América do Sul
+            true, // usado em saladas de frutas
+            true, // encontrada em árvores
+            true, // consumida principalmente fresca
+            true, // usado para fazer geleias
+            false, // encontrada em cachos
+            true, // consumida cozida
+            true, // rica em vitamina C
+            false, // pequena
+            true, // consumida seca
+            true, // usado em sobremesas
+            false, // originária da Ásia
+            false, // encontrada em arbustos
+            false, // popular no inverno
+            true, // rica em fibras
+            true, // usado em tortas
+            false, // encontrada em regiões tropicais
+            true, // usado para fazer vinho
+            true, // consumida em forma de geleia
+            true, // usado em doces
+            false, // verde quando madura
+            true, // usado em sucos detox
+            true, // rica em antioxidantes
+            true, // consumida em saladas
+            false, // originária da Europa
+            true, // usado em smoothies
+            false, // encontrada em vinhas
+            true, // popular em sobremesas geladas
+            true, // usado em conservas
+            true, // consumida em forma de purê
+            false, // encontrada em grandes cachos
+            true, // usado em molhos
+            true, // rica em minerais
+            true, // consumida em forma de compota
+            true, // usado em recheios
+            true)); // conhecida por seu aroma
         return frutas;
     }
 
