@@ -156,7 +156,7 @@ public class Fruta {
         this.verdeQuandoMadura = verdeQuandoMadura;
     }
 
-    public Fruta(){
+    public Fruta() {
 
     }
 
@@ -164,9 +164,9 @@ public class Fruta {
         return nome;
     }
 
-    public void setNome(String nome){
+    public void setNome(String nome) {
         this.nome = nome;
-    }    
+    }
 
     public int getPontos() {
         return pontos;

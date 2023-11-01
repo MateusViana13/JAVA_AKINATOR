@@ -5,39 +5,40 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
 
-
-
 public class AkiFruta {
     public static void main(String[] args) {
         // Inicialização de objetos e variáveis
-        Scanner scan = new Scanner(System.in);                     // Objeto para entrada de dados
-        Random rand = new Random();                                // Gerador de números aleatórios
-        BancoDados db = new BancoDados();                          // Objeto para acessar o banco de dados
-        String[] perguntas = db.ImportarPergunta();                // Carrega perguntas do banco de dados
-        ArrayList<Fruta> frutas = db.ImportarFrutas();             // Carrega frutas do banco de dados
-        Map<String, String> mapeamento = db.ImportarMapeamento();  // Carrega mapeamento do banco de dados
+        Scanner scan = new Scanner(System.in); // Objeto para entrada de dados
+        Random rand = new Random(); // Gerador de números aleatórios
+        BancoDados db = new BancoDados(); // Objeto para acessar o banco de dados
+        String[] perguntas = db.ImportarPergunta(); // Carrega perguntas do banco de dados
+        ArrayList<Fruta> frutas = db.ImportarFrutas(); // Carrega frutas do banco de dados
+        Map<String, String> mapeamento = db.ImportarMapeamento(); // Carrega mapeamento do banco de dados
 
         // Mensagem de boas-vindas e instruções para o jogador
-        System.out.println("\n\nBem vindo ao jogo Akinator de Fruta!\n\nPense em uma fruta e irei advinhar!\n\nReponda às perguntas seguindo o modelo:\n\n1. Sim\n2. Provavelmente Sim\n3. Talvez\n4. Provavelmente Não\n5. Não\n\nPressione Enter para iniciar...");
+        System.out.println(
+                // "\n\nBem vindo ao jogo Akinator de Fruta!\n\nPense em uma das seguintes frutas: Maça, Banana, Laranja, Abacate, Melancia, Morango, Abacaxi, Mamão, Pera, Kiwi, Limão, Manga, Uva, Cereja ou Pêssego e irei advinhar!\n\nReponda às perguntas seguindo o modelo:\n\n1. Sim\n2. Provavelmente Sim\n3. Talvez\n4. Provavelmente Não\n5. Não\n\nPressione Enter para iniciar...");
+                "\n\nBem vindo ao jogo Akinator de Fruta!\n\nPense em uma das seguintes frutas: Maça, Banana, Laranja, Abacate, Melancia, Morango, Abacaxi e irei advinhar!\n\nReponda às perguntas seguindo o modelo:\n\n1. Sim\n2. Provavelmente Sim\n3. Talvez\n4. Provavelmente Não\n5. Não\n\nPressione Enter para iniciar...");
         scan.nextLine(); // Aguarda o usuário pressionar Enter para continuar
-        
+
         boolean flag = false; // Variável de controle fim de jogo
         // Loop externo que permite até duas rodadas de perguntas
         for (int i = 1; i <= 2 && !flag; i++) {
-            
+
             // Loop interno para fazer até 15 perguntas em cada rodada
             for (int j = 0; j < 15; j++) {
                 int index = rand.nextInt(perguntas.length); // Gera um índice de pergunta aleatório
-                int respostaNumerica = 0;                   // Inicializa a resposta do usuário
-                
+                int respostaNumerica = 0; // Inicializa a resposta do usuário
+
                 // Loop para garantir que a resposta seja entre 1 e 5
                 while (respostaNumerica < 1 || respostaNumerica > 5) {
                     System.out.println("\n" + perguntas[index]); // Exibe a pergunta
-                    System.out.print("Resposta: ");            // Exibe "Resposta:"
-                    respostaNumerica = scan.nextInt();           // Lê a resposta do usuário
+                    System.out.print("Resposta: "); // Exibe "Resposta:"
+                    respostaNumerica = scan.nextInt(); // Lê a resposta do usuário
                     // Verifica se a resposta está fora do intervalo válido
                     if (respostaNumerica < 1 || respostaNumerica > 5) {
-                        System.out.println("\nPor favor, digite um número entre 1 e 5.\n1. Sim\n2. Provavelmente Sim\n3. Talvez\n4. Provavelmente Não\n5. Não");
+                        System.out.println(
+                                "\nPor favor, digite um número entre 1 e 5.\n1. Sim\n2. Provavelmente Sim\n3. Talvez\n4. Provavelmente Não\n5. Não");
                     }
                 }
 
@@ -103,26 +104,26 @@ public class AkiFruta {
                 perguntas = novoArray;
             }
 
-
-            Fruta frutaEncontrada = new Fruta(); //Declarando um objeto de fruta vazio           
+            Fruta frutaEncontrada = new Fruta(); // Declarando um objeto de fruta vazio
             int maior = frutas.get(0).getPontos(); // Inicializa variável para acompanhar a maior pontuação
-            frutaEncontrada =frutas.get(0);  //atribuindo o valor da fruta auxiliar como a primeira fruta da lista
+            frutaEncontrada = frutas.get(0); // atribuindo o valor da fruta auxiliar como a primeira fruta da lista
 
             // Encontra a fruta com a maior pontuação
             for (Fruta fruta : frutas) {
-                // System.out.println(fruta.getPontos());  // Exibe os pontos de cada fruta
+                // System.out.println(fruta.getPontos()); // Exibe os pontos de cada fruta
 
                 if (fruta.getPontos() > maior) {
-                    frutaEncontrada = fruta;//atribuindo o valor da fruta auxiliar como a fruta com maior pontuação                  
-                    maior = fruta.getPontos();  // Atualiza a maior pontuação
-                }            
+                    frutaEncontrada = fruta;// atribuindo o valor da fruta auxiliar como a fruta com maior pontuação
+                    maior = fruta.getPontos(); // Atualiza a maior pontuação
+                }
             }
 
             if (maior == 0)
-                frutaEncontrada.setNome("batata");// Define um nome padrão se todas as pontuações forem zero
+                frutaEncontrada.setNome("Batata");// Define um nome padrão se todas as pontuações forem zero
 
             // Pergunta ao usuário se a fruta adivinhada é correta
-            System.out.print("\nSua fruta é... " + frutaEncontrada.getNome() + "!\nAcertei?\n1. Sim\n2. Não\nResposta: ");
+            System.out
+                    .print("\nSua fruta é... " + frutaEncontrada.getNome() + "!\nAcertei?\n1. Sim\n2. Não\nResposta: ");
             int respostaNumerica = scan.nextInt();
 
             // Verifica a resposta do usuário e finaliza o jogo conforme necessário
@@ -131,8 +132,8 @@ public class AkiFruta {
                 flag = true; // Define a flag como verdadeira para encerrar o loop externo
             }
 
-            if(flag == false){
-                frutas.remove(frutaEncontrada); //Remove a fruta da lista de opções caso o usuário indique que ela não é a que ele escolheu
+            if (flag == false) {
+                frutas.remove(frutaEncontrada); // Remove a fruta da lista de opções caso o usuário indique que ela não é a que ele escolheu
             }
 
             if (i == 2 && !flag)
